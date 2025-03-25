@@ -11,9 +11,9 @@ function App() {
     <>
       <NavBar/>
       <Hero/>
-      <About/>
       <Services />
       <Tours />
+      <About/>
       <Footer />
     </>
   )

@@ -6,7 +6,7 @@ const Services = () => {
     return (
         <>
             <section className="section services" id="services">
-                <Title title='our' subTitle='services' />
+                <Title title='technologies' subTitle='' />
                 <div className="section-center services-center">
                     {services.map((props) => {
                         return(

@@ -5,30 +5,22 @@ const About = () => {
   return (
     <>
         <section className="section" id="about">
-            <Title title='about' subTitle='us' />
+            <Title title='Contact' subTitle='me' />
 
             <div className="section-center about-center">
-                <div className="about-img">
-                    <img
-                    src={about}
-                    className="about-photo"
-                    alt="awesome beach"
-                    />
-                </div>
                 <article className="about-info">
-                    <h3>explore the difference</h3>
+                    <h3>Send me a message</h3>
                     <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-                    quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
-                    unde dolor?
+                        I'm very approachable and would love to chat with you. Feel free to call, email, or connect via social media. You can also send me a message using the form on the right (message sending functionality not yet implemented).
                     </p>
-                    <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-                    quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
-                    unde dolor?
-                    </p>
-                    <a href="#home" className="btn">read more</a>
                 </article>
+                <div className='cardRightSide'>
+                    <input name="name" placeholder='Name' />
+                    <input name="email" placeholder='Email' />
+                    <input name="subject" placeholder='Subject' />
+                    <textarea name="text" placeholder='Write your message here...'></textarea>
+                    <button className="btn hero-btn" type="submit">Send message</button>
+                </div>
             </div>
         </section>
     </>
