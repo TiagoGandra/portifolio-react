@@ -178,37 +178,49 @@ Hero
   justify-content: center;
   align-items: center;
 }
+
 .hero-banner {
   text-align: center;
   color: var(--clr-white);
   padding: 0 3rem;
-  background: rgb(28, 27, 27, 0.8);
+  background: rgba(28, 27, 27, 0.8);
   width: 55rem;
   height: 25rem;
   border-radius: 2rem;
+  /* Novas propriedades adicionadas: */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .hero-banner h1 {
   text-transform: uppercase;
+  margin-bottom: 2rem; /* Espaçamento entre elementos */
 }
+
 .hero-banner p {
   max-width: 35rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 2rem auto; /* Centraliza e adiciona espaço abaixo */
   color: var(--clr-white);
   letter-spacing: var(--spacing);
 }
+
 .hero-btn {
   padding: 0.9rem 1.6rem;
   font-size: 1.25rem;
   background: var(--clr-white);
   color: var(--clr-primary-5);
+  /* Garante que o botão não fique muito largo */
+  display: inline-block;
 }
+
 .hero-btn:hover {
   background: transparent;
   color: var(--clr-white);
   border-color: var(--clr-white);
 }
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .hero {
     background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
       url('./images/bg-portifolio.png') center/cover no-repeat;
@@ -218,6 +230,157 @@ Hero
   }
   .hero-banner p {
     max-width: 45rem;
+  }
+} */
+ /* @media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+      url('./images/bg-portifolio.png') center/cover no-repeat;
+    padding: 0;
+  }
+
+  .hero-banner {
+    background: rgba(28, 27, 27, 0.8);
+    padding: 3rem;
+    height: auto;
+    min-height: 25rem;
+    border-radius: 2rem;
+  }
+
+  .hero-banner h1,
+  .hero-banner p {
+    color: var(--clr-white); 
+  }
+
+  .hero-btn {
+    background: var(--clr-white);
+    color: var(--clr-primary-5);
+    border-color: var(--clr-white);
+  }
+
+  .hero-btn:hover {
+    background: transparent;
+    color: var(--clr-white);
+    border-color: var(--clr-white);
+  }
+} */
+
+/* Ajustes para telas muito pequenas */
+/* @media screen and (max-width: 400px) {
+  .hero-banner {
+    padding: 1.5rem;
+  }
+  
+  .hero-banner h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+  }
+} */
+ /* Estilo base (mobile first) */
+.hero {
+  min-height: 100vh;
+  background: #1c1b1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.hero-banner {
+  text-align: center;
+  color: var(--clr-white);
+  padding: 2rem;
+  width: 100%;
+  max-width: 55rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  /* Removemos o background padrão para mobile */
+  background: none; 
+}
+
+.hero-banner h1 {
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  color: var(--clr-white); 
+}
+
+.hero-banner p {
+  max-width: 35rem;
+  margin: 0 auto 2rem auto;
+  color: var(--clr-white); 
+  letter-spacing: var(--spacing);
+}
+
+.hero-btn {
+  padding: 0.9rem 1.6rem;
+  font-size: 1.25rem;
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+  border: 2px solid var(--clr-primary-5);
+  display: inline-block;
+}
+
+.hero-btn:hover {
+  background: transparent;
+  color: var(--clr-primary-5);
+  border-color: var(--clr-primary-5);
+}
+
+/* Tablet (768px+) */
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+      url('./images/bg-portifolio.png') center/cover no-repeat;
+    padding: 0;
+  }
+
+  .hero-banner {
+    background: rgba(28, 27, 27, 0.8); 
+    padding: 3rem;
+    height: auto;
+    min-height: 25rem;
+    border-radius: 2rem;
+  }
+
+  .hero-banner h1,
+  .hero-banner p {
+    color: var(--clr-white); 
+  }
+
+  .hero-btn {
+    background: var(--clr-white);
+    color: var(--clr-primary-5);
+    border-color: var(--clr-white);
+  }
+
+  .hero-btn:hover {
+    background: transparent;
+    color: var(--clr-white);
+    border-color: var(--clr-white);
+  }
+}
+
+/* Ajustes para telas muito pequenas */
+@media screen and (max-width: 400px) {
+  .hero-banner {
+    padding: 1.5rem;
+  }
+  
+  .hero-banner h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
   }
 }
 /*
