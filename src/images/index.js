@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import tour1 from "./tour-1.jpeg";
 import tour2 from "./tour-2.jpeg";
 import tour3 from "./tour-3.jpeg";

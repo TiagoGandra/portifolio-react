@@ -1,5 +1,5 @@
 export const Tour = (props) => {
-  const { img, date, title, text, icon, location, duration, price } = props;
+  const { img, date, title, text, icon, href } = props;
   return (
     <article className="tour-card">
       <div className="tour-img-container">
@@ -14,6 +14,9 @@ export const Tour = (props) => {
           <p>
             <span>
               <i className={icon}></i>
+              <a className="btn" href={href} target="_blank" rel="noreferrer">
+                See more
+              </a>
             </span>
           </p>
           <p>{date}</p>

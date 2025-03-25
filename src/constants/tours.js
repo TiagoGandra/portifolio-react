@@ -11,10 +11,11 @@ export const tours = [
   {
     id: 1,
     img: demeter,
+    date: "September 5th, 2023",
     title: "Demeter",
     text: "Projeto realizado para o TCC do curso de Ciência da computação no CEUB. Aplicativo mobile de organização de estoque, emissão de nota fiscal e contato para comercio de alimentos e materiais agrícolas.",
     icon: "fas fa-map",
-    date: "September 5th, 2023",
+    href: "https://github.com/TiagoGandra/Demeter",
   },
   {
     id: 2,
@@ -23,9 +24,7 @@ export const tours = [
     title: "Peer-to-peer-IA",
     text: "Projeto realizado para a disciplina de Arquitetura de Sistemas Distribuídos no CEUB. Servidor peer-to-peer virtual, com um servidor e dois clientes integrados a uma inteligência artificial para detecção de fake news.",
     icon: "fas fa-map",
-    location: "Indonesia",
-    duration: "6 Days",
-    price: "from $2500",
+    href: "https://github.com/TiagoGandra/peer-to-peer-IA",
   },
   {
     id: 3,
@@ -34,9 +33,7 @@ export const tours = [
     title: "Gym-Spike",
     text: "Projeto seletivo para a equipe da Austre, onde é um sistema web para ajudar as pessoas a manter hábitos saudáveis de forma consistente e sustentável com gamificação. O projeto foi desenvolvido no front-end com Vite + React + TypeScript + CSS Vanilla e no back-end NoSQL(MongoDB Atlas) com integração via Mongoose.",
     icon: "fas fa-map",
-    location: "Japan",
-    duration: "10 Days",
-    price: "from $4100",
+    href: "https://github.com/TiagoGandra/Gym-Spike",
   },
   {
     id: 4,
@@ -45,9 +42,7 @@ export const tours = [
     title: "NLW-IA",
     text: "Projeto de uma IA generativa utilizando modelo LLMs GPT para um planner de viagem realizado acompanhando a decima sexta edição do Next Level Week da Rocketseat.",
     icon: "fas fa-map",
-    location: "Tanzania",
-    duration: "5 Days",
-    price: "from $3200",
+    href: "https://github.com/TiagoGandra/NLW-IA",
   },
   {
     id: 5,
@@ -56,9 +51,7 @@ export const tours = [
     title: "NLW-Python",
     text: "Projeto Back-End um banco de dados de um planner de viagem realizado acompanhando a decima sexta edição do Next Level Week da Rocketseat.",
     icon: "fas fa-map",
-    location: "Kenya",
-    duration: "7 Days",
-    price: "from $2900",
+    href: "https://github.com/TiagoGandra/NLW-Python",
   },
   {
     id: 6,
@@ -67,8 +60,6 @@ export const tours = [
     title: "Backroads",
     text: "Landing Page de um serviço de turismo. Foi utilizado Vite para a criação do projeto React com JavaScript e CSS Vanilla.",
     icon: "fas fa-map",
-    location: "India",
-    duration: "12 Days",
-    price: "from $4500",
+    href: "https://github.com/TiagoGandra/backroads",
   },
 ];

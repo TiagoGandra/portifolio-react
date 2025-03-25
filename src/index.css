@@ -31,7 +31,7 @@ Variables
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
-  --ff-primary: 'Lato', sans-serif;
+  --ff-primary: "Lato", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -53,8 +53,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: #1c1b1b;
   color: var(--clr-primary-10);
   line-height: 1.5;
@@ -152,7 +152,7 @@ p {
   text-transform: uppercase;
 }
 .section-title span {
-  color: var(--clr-primary-5);
+  color: #2954a3;
 }
 .section-center {
   width: 90vw;
@@ -210,7 +210,7 @@ Hero
   padding: 0.9rem 1.6rem;
   font-size: 1.25rem;
   background: var(--clr-white);
-  color: var(--clr-primary-5);
+  color: #2954a3;
   /* Garante que o botão não fique muito largo */
   display: inline-block;
 }
@@ -232,7 +232,7 @@ Hero
     max-width: 45rem;
   }
 } */
- /* @media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .hero {
     background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
       url('./images/bg-portifolio.png') center/cover no-repeat;
@@ -280,7 +280,7 @@ Hero
     font-size: 1rem;
   }
 } */
- /* Estilo base (mobile first) */
+/* Estilo base (mobile first) */
 .hero {
   min-height: 100vh;
   background: #1c1b1b;
@@ -301,21 +301,21 @@ Hero
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   /* Removemos o background padrão para mobile */
-  background: none; 
+  background: none;
 }
 
 .hero-banner h1 {
   text-transform: uppercase;
   margin-bottom: 1.5rem;
-  color: var(--clr-white); 
+  color: var(--clr-white);
 }
 
 .hero-banner p {
   max-width: 35rem;
   margin: 0 auto 2rem auto;
-  color: var(--clr-white); 
+  color: var(--clr-white);
   letter-spacing: var(--spacing);
 }
 
@@ -338,12 +338,12 @@ Hero
 @media screen and (min-width: 768px) {
   .hero {
     background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
-      url('./images/bg-portifolio.png') center/cover no-repeat;
+      url("./images/bg-portifolio.png") center/cover no-repeat;
     padding: 0;
   }
 
   .hero-banner {
-    background: rgba(28, 27, 27, 0.8); 
+    background: rgba(28, 27, 27, 0.8);
     padding: 3rem;
     height: auto;
     min-height: 25rem;
@@ -352,12 +352,12 @@ Hero
 
   .hero-banner h1,
   .hero-banner p {
-    color: var(--clr-white); 
+    color: var(--clr-white);
   }
 
   .hero-btn {
     background: var(--clr-white);
-    color: var(--clr-primary-5);
+    color: #2954a3;
     border-color: var(--clr-white);
   }
 
@@ -373,11 +373,11 @@ Hero
   .hero-banner {
     padding: 1.5rem;
   }
-  
+
   .hero-banner h1 {
     font-size: 1.8rem;
   }
-  
+
   .hero-btn {
     padding: 0.7rem 1.2rem;
     font-size: 1rem;
@@ -412,7 +412,7 @@ About
 }
 @media screen and (min-width: 1170px) {
   .about-img::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -431,16 +431,20 @@ About
 }
 .cardRightSide input,
 textarea {
-    width: 50vmin;
-    padding: 1vmin;
-    margin-bottom: 1vmin;
-    border: 1px solid #ccc;
-    border-radius: 0.5vmin;
-    background-color: --var(--clr-grey-8);
-    color: rgb(0, 0, 0);
-    box-sizing: border-box;
-    font-size: 2vmin;
-    resize: none;
+  width: 50vmin;
+  padding: 1vmin;
+  margin-bottom: 1vmin;
+  border: 1px solid #ccc;
+  border-radius: 0.5vmin;
+  background-color: --var(--clr-grey-8);
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  font-size: 2vmin;
+  resize: none;
+}
+.cardRightSide textarea {
+  min-width: 10vmin;
+  min-height: 15vmin;
 }
 /*
 =============== 
@@ -448,11 +452,16 @@ Services
 ===============
 */
 .services {
-  background: linear-gradient(144deg, #2954A3 13.75%, #2C2C2C 90.90%);
+  background: linear-gradient(144deg, #2954a3 13.75%, #2c2c2c 90.9%);
 }
 .service {
   text-align: center;
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 5rem;
+  justify-content: center;
+  align-items: center;
 }
 .service-icon {
   background: var(--clr-primary-5);
@@ -497,10 +506,7 @@ Services
     text-align: left;
   }
   .service-icon {
-    align-self: start;
-  }
-  .service-info {
-    padding-left: 1rem;
+    align-self: center;
   }
   .service-title {
     margin-bottom: 0.5rem;
@@ -515,7 +521,7 @@ Featured Tours
 
 .tour-card {
   transition: var(--transition);
-  background: linear-gradient(144deg, #2954A3 13.75%, #2C2C2C 90.90%);
+  background: linear-gradient(144deg, #2954a3 13.75%, #2c2c2c 90.9%);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
 }
@@ -576,6 +582,12 @@ Featured Tours
 .tour-btn {
   text-align: center;
 }
+.tour-footer a {
+  margin-left: 10px;
+  background: none;
+  text-transform: capitalize;
+  color: var(--clr-primary-5);
+}
 @media screen and (min-width: 768px) {
   .featured-center {
     display: grid;
@@ -616,7 +628,7 @@ Footer
   transition: var(--transition);
 }
 .footer-link:hover {
-  color: var(--clr-primary-5);
+  color: #2954a3;
 }
 .footer-icon {
   font-size: 2rem;
@@ -625,7 +637,7 @@ Footer
   transition: var(--transition);
 }
 .footer-icon:hover {
-  color: var(--clr-primary-5);
+  color: #2954a3;
 }
 .copyright {
   text-transform: capitalize;
@@ -647,7 +659,7 @@ Navbar
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--clr-white);
+  background: #1c1b1b;
   box-shadow: var(--dark-shadow);
   z-index: 2;
   height: 4rem;
@@ -685,12 +697,12 @@ Navbar
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   transition: var(--transition);
-  color: var(--clr-grey-1);
+  color: var(--clr-white);
   cursor: pointer;
   font-size: 1rem;
 }
 .nav-link:hover {
-  color: var(--clr-primary-1);
+  color: #2954a3;
   background: var(--clr-primary-8);
   padding-left: 2.25rem;
 }
@@ -729,7 +741,7 @@ Navbar
   }
   .nav-link:hover {
     padding: 0;
-    color: var(--clr-primary-5);
+    color: #2954a3;
     background: transparent;
   }
   .nav-icons {
@@ -741,11 +753,11 @@ Navbar
   }
   .nav-icon {
     margin-right: 0.7rem;
-    color: var(--clr-primary-5);
+    color: var(--clr-white);
     font-size: 1.2rem;
     transition: var(--transition);
   }
   .nav-icon:hover {
-    color: var(--clr-primary-8);
+    color: #2954a3;
   }
 }
