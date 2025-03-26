@@ -1,7 +1,6 @@
-import { about } from "../images/index.js";
 import { Title } from "./Title.jsx";
 
-const About = () => {
+const Contact = () => {
   return (
     <>
       <section className="section" id="about">
@@ -43,4 +42,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Contact;

@@ -1,4 +1,4 @@
-export const Service = (props) => {
+export const Skill = (props) => {
   const { icon, title, isImage } = props;
   return (
     <article className="service">

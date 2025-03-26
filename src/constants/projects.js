@@ -7,7 +7,7 @@ import {
   backroads,
 } from "../images/index";
 
-export const tours = [
+export const projects = [
   {
     id: 1,
     img: demeter,

@@ -1,22 +1,21 @@
-import About from "./components/About";
+import Contact from "./components/Contact";
 import Hero from "./components/Hero";
-import NavBar from "./components/NavBar"
-import Services from "./components/Services";
-import Tours from "./components/Tours";
+import NavBar from "./components/NavBar";
+import Skills from "./components/Skills";
+import Tours from "./components/Projects";
 import Footer from "./components/Footer";
 
 function App() {
-
   return (
     <>
-      <NavBar/>
-      <Hero/>
-      <Services />
+      <NavBar />
+      <Hero />
+      <Skills />
       <Tours />
-      <About/>
+      <Contact />
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

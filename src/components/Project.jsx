@@ -1,4 +1,4 @@
-export const Tour = (props) => {
+export const Project = (props) => {
   const { img, date, title, text, icon, href } = props;
   return (
     <article className="tour-card">

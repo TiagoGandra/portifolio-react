@@ -6,12 +6,7 @@ export const PageLinks = ({ parentClass, parentId, itemClass }) => {
       {pageLink.map((props) => {
         return (
           <li key={props.id}>
-            <a
-              href={props.href}
-              target="_blank"
-              rel="noreferrer"
-              className={itemClass}
-            >
+            <a href={props.href} className={itemClass}>
               {" "}
               {props.text}{" "}
             </a>
