@@ -5,7 +5,7 @@ import { Project } from "./Project.jsx";
 const Projects = () => {
   return (
     <>
-      <section className="section" id="tours">
+      <section className="section" id="projects">
         <Title title="Projects" subTitle="" />
 
         <div className="section-center featured-center">

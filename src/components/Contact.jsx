@@ -3,11 +3,11 @@ import { Title } from "./Title.jsx";
 const Contact = () => {
   return (
     <>
-      <section className="section" id="about">
+      <section className="section" id="contact">
         <Title title="Contact" subTitle="me" />
 
-        <div className="section-center about-center">
-          <article className="about-info">
+        <div className="section-center contact-center">
+          <article className="contact-info">
             <h3>Send me a message</h3>
             <p>
               I'm very approachable and would love to chat with you. Feel free

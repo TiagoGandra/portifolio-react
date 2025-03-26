@@ -1,16 +1,16 @@
 export const Project = (props) => {
   const { img, date, title, text, icon, href } = props;
   return (
-    <article className="tour-card">
-      <div className="tour-img-container">
-        <img src={img} className="tour-img" alt="" />
+    <article className="project-card">
+      <div className="project-img-container">
+        <img src={img} className="project-img" alt="" />
       </div>
-      <div className="tour-info">
-        <div className="tour-title">
+      <div className="project-info">
+        <div className="project-title">
           <h4>{title}</h4>
         </div>
         <p>{text}</p>
-        <div className="tour-footer">
+        <div className="project-footer">
           <p>
             <span>
               <i className={icon}></i>
