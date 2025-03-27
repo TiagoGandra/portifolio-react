@@ -451,19 +451,84 @@ textarea {
 skills
 ===============
 */
+/* Skills Section */
 .skills {
   background: linear-gradient(144deg, #2954a3 13.75%, #2c2c2c 90.9%);
+  padding: 4rem 0;
+  color: white;
 }
-.skill {
-  text-align: center;
-  margin-bottom: 3rem;
+
+.skills-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.skills-container {
   display: flex;
   flex-direction: column;
-  width: 5rem;
-  justify-content: center;
-  align-items: center;
+  gap: 2rem;
 }
-.skill-icon {
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-description {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.description-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+}
+
+.description-content {
+  color: white;
+}
+
+.description-content p {
+  margin: 0.5rem 0;
+}
+
+/* Skill Card */
+.skill-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 100%;
+}
+
+.skill-card:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+.skill-card.active {
+  background-color: var(--clr-primary-5);
+}
+
+.skill-icon-container {
   background: var(--clr-primary-5);
   color: var(--clr-primary-1);
   padding: 0.5rem;
@@ -471,45 +536,56 @@ skills
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  margin-bottom: 1.5rem;
   width: 3.5rem;
-}
-.skill-icon-img {
-  width: 2rem; /* Ajuste conforme necessário */
-  height: 2rem; /* Mantenha a proporção */
-  object-fit: contain; /* Garante que a imagem não distorça */
-}
-.skill-text {
-  max-width: 20rem;
-  margin-left: auto;
-  margin-right: auto;
+  height: 3.5rem;
+  border-radius: 50%;
 }
 
-@media screen and (min-width: 576px) {
-  .skills-center {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+.skill-icon {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+.skill-title {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.section-title p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
   }
-  .skill {
-    margin-bottom: 0rem;
+  
+  .skill-description {
+    padding: 1.5rem;
   }
 }
-@media screen and (min-width: 992px) {
-  .skills-center {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-@media screen and (min-width: 1170px) {
-  .skill {
-    display: flex;
-    text-align: left;
-  }
-  .skill-icon {
-    align-self: center;
-  }
-  .skill-title {
-    margin-bottom: 0.5rem;
+@media (hover: none) {
+  .skill-card {
+    cursor: pointer;
   }
 }
 

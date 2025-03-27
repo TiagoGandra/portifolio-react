@@ -1,17 +1,27 @@
-export const Skill = (props) => {
-  const { icon, title, isImage } = props;
+export const Skill = ({ 
+  icon, 
+  title, 
+  isImage, 
+  isActive, 
+  onClick, 
+  onMouseEnter, 
+  onMouseLeave 
+}) => {
   return (
-    <article className="skill">
-      <div className="skill-info">
-        <h4 className="skill-title">{title}</h4>
-      </div>
-      <span className="skill-icon">
+    <div 
+      className={`skill-card ${isActive ? 'active' : ''}`}
+      onClick={onClick}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <div className="skill-icon-container">
         {isImage ? (
-          <img src={icon} alt={title} className="skill-icon-img" />
+          <img src={icon} alt={title} className="skill-icon" />
         ) : (
           <i className={icon}></i>
         )}
-      </span>
-    </article>
+      </div>
+      <span className="skill-title">{title}</span>
+    </div>
   );
 };
