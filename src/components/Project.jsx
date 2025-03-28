@@ -3,23 +3,23 @@ export const Project = (props) => {
   return (
     <article className="project-card">
       <div className="project-img-container">
-        <img src={img} className="project-img" alt="" />
+        <img src={img} className="project-img" alt={title} />
       </div>
       <div className="project-info">
         <div className="project-title">
           <h4>{title}</h4>
         </div>
-        <p>{text}</p>
+        <p className="project-text">{text}</p>
         <div className="project-footer">
-          <p>
+          <p className="project-link">
             <span>
               <i className={icon}></i>
-              <a className="btn" href={href} target="_blank" rel="noreferrer">
+              <a className="btn-projects" href={href} target="_blank" rel="noreferrer">
                 See more
               </a>
             </span>
           </p>
-          <p>{date}</p>
+          <p className="project-date">{date}</p>
         </div>
       </div>
     </article>
