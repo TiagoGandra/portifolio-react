@@ -429,23 +429,6 @@ contact
     position: relative;
   }
 }
-.cardRightSide input,
-textarea {
-  width: 50vmin;
-  padding: 1vmin;
-  margin-bottom: 1vmin;
-  border: 1px solid #ccc;
-  border-radius: 0.5vmin;
-  background-color: --var(--clr-grey-8);
-  color: rgb(0, 0, 0);
-  box-sizing: border-box;
-  font-size: 2vmin;
-  resize: none;
-}
-.cardRightSide textarea {
-  min-width: 10vmin;
-  min-height: 15vmin;
-}
 /*
 =============== 
 skills
